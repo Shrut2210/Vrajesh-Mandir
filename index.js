@@ -17,6 +17,6 @@ require('./db/connection.js');
 const User = require('./Routes/UserRoute.js');
 app.use('/user', User);
 
-app.listen(process.env.PORT, () => {
+app.listen(7000, () => {
     console.log('PORT running');
 })
