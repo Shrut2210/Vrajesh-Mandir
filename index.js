@@ -17,6 +17,9 @@ require('./db/connection.js');
 const User = require('./Routes/UserRoute.js');
 app.use('/user', User);
 
+const Image = require('./Routes/ImageRoute.js');
+app.use('/image', Image);
+
 app.listen(7000, () => {
     console.log('PORT running');
 })
